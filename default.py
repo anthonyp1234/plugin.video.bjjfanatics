@@ -146,7 +146,7 @@ def get_instructionals_for_menu():
 
 
 def make_titles_shorter(array_of_dict):
-    """See if titles in array of dict have too long names/similar. and remove3 similar portion"""
+    """See if titles in array of dict have too long"""
 
     def keep_last_three(string):
         my_pattern = '.*?(\S+\s\S+\s\S+$)'
@@ -318,7 +318,7 @@ def build_menu(itemData):
             kodi_item.setArt({  'thumb': my_item.get("front_cover"), 
                                 'icon' :  my_item.get("front_cover"), 
                                 'landscape': my_item.get("back_cover"), 
-                                'poster' : my_item.get("back_cover"), 
+                                'poster' : my_item.get("front_cover"), 
                                 'banner': my_item.get("back_cover"), 
                                 'fanart': my_item.get("back_cover")})
             video_info = {
